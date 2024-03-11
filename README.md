@@ -113,13 +113,12 @@ For any question regarding this repository, please contact:
 If you use this code in your research please use the following citation:
 
 ```bibtex
-@article{Gohari:2024:2403.05380,
-  author = {Gohari, Mahyar and Besstagini, Paolo and Benini, Sergio and Adami, Nicola},
-  title = {Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings},
-  year = {2024},
-  eprint = {arXiv:2403.05380},
-  archivePrefix = {arXiv},
-  primaryClass = {Sound (cs.SD)},
-  url = {http://arxiv.org/abs/2403.05380}
+@misc{gohari2024spectrogrambased,
+      title={Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings}, 
+      author={Mahyar Gohari and Paolo Bestagini and Sergio Benini and Nicola Adami},
+      year={2024},
+      eprint={2403.05380},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD}
 }
 ```
