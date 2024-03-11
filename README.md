@@ -113,7 +113,7 @@ For any question regarding this repository, please contact:
 If you use this code in your research please use the following citation:
 
 ```bibtex
-@article{AuthorLastName:YYYY:arXivIdentifier,
+@article{Gohari:2024:2403.05380,
   author = {Gohari, Mahyar and Besstagini, Paolo and Benini, Sergio and Adami, Nicola},
   title = {Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings},
   year = {2024},
