@@ -5,9 +5,9 @@ layout: default
 ---
 
 # Abstract
-<p style="text-align: justify;">In the realm of music production and audio processing, the deployment of automatic singing pitch correction, also known as Auto-Tune, has significantly transformed the landscape of vocal performance. While auto-tuning technology has offered musicians the ability to tune their vocal pitches and achieve a desired level of precision, its use has also sparked debates regarding its impact on authenticity and artistic integrity. As a result, detecting and analyzing Auto-Tuned vocals in music recordings have become essential for music scholars, producers, and listeners. However, to the best of our knowledge, no prior effort has been made in this direction. This study introduces a data-driven approach leveraging triplet networks for the detection of Auto-Tuned songs, backed by the creation of a dataset composed of original and Auto-Tuned audio clips. The experimental results demonstrate the superiority of the proposed method in both accuracy and robustness compared to Rawnet2, an end-to-end model proposed for anti-spoofing and widely used for other audio forensic tasks.</p>
+<p style="text-align: justify;">In the domain of music production and audio processing, the deployment of automatic singing pitch correction, also known as Auto-Tune, has significantly transformed the landscape of vocal performance. While auto-tuning technology has offered musicians the ability to tune their vocal pitches and achieve a desired level of precision, its use has also sparked debates regarding its impact on authenticity and artistic integrity. As a result, detecting and analyzing Auto-Tuned vocals in music recordings have become essential for music scholars, producers, and listeners. However, to the best of our knowledge, no prior effort has been made in this direction. This study introduces a data-driven approach leveraging triplet networks for the detection of Auto-Tuned songs, backed by the creation of a dataset composed of original and Auto-Tuned audio clips. The experimental results demonstrate the superiority of the proposed method in both accuracy and robustness compared to Rawnet2, an end-to-end model proposed for anti-spoofing and widely used for other audio forensic tasks.</p>
 
-**Note:** The related manuscript is currently under review.
+**Note:** The related manuscript is currently under review. [Preprint paper link](http://arxiv.org/abs/2403.05380).
 
 ***
 
@@ -54,7 +54,7 @@ layout: default
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Segment Numbers</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Auto-Tuned Segments (Number)</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Auto-Tuned Segments (%)</th>
-            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Average Score</th>
+            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Average Likelihood</th>
         </tr>
         <tr>
             <td style="text-align:center;">16</td>
@@ -80,7 +80,7 @@ layout: default
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #white;">Segment Numbers</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;border: 1px solid #white;">Auto-Tuned Segments (Number)</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;border: 1px solid #white;">Auto-Tuned Segments (%)</th>
-            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #white;">Average Score</th>
+            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #white;">Average Likelihood</th>
         </tr>
         <tr>
             <td style="text-align:center">13</td>
@@ -107,7 +107,7 @@ layout: default
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Segment Numbers</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Auto-Tuned Segments (Number)</th>
             <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Auto-Tuned Segments (%)</th>
-            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Average Score</th>
+            <th style="text-align:center;font-size: 15px; background-color: #D3D3D3; color: Black;">Average Likelihood</th>
         </tr>
         <tr>
             <td style="text-align:center;">9</td>
