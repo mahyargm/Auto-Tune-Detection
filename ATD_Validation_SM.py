@@ -156,7 +156,7 @@ def main():
         os.rmdir(output_dir)
         exit()
     Validation(output_dir, model_name, counter_outputs, device)
-    os.rmdir(output_dir)
+    shutil.rmtree(output_dir)
 
 
 if __name__=='__main__':

@@ -6,8 +6,9 @@ This tool utilizes deep learning and spectrogram-based techniques to identify Au
 ## Installation:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
+- We recommend using **Python 3.8** or higher for compatibility.
 
 ## Data Preparation:
 
