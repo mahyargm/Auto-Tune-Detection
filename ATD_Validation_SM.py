@@ -119,6 +119,8 @@ def main():
 
     # Create a temporary directory
     output_dir = Path(r'./temp')
+    if os.path.exists(output_dir):
+        os.rmdir(output_dir)
     output_dir.mkdir()
 
     # Parse the command line arguments.
@@ -149,7 +151,10 @@ def main():
         vocal_output_path = output_dir / 'vocal_{}.png'.format(counter_outputs)
 
         mel_spectrogram(audio = vocal_segment, sr=sr, path=vocal_output_path)
-
+    if not counter_outputs: 
+        print('No singing voice segments have been found!')
+        os.rmdir(output_dir)
+        exit()
     Validation(output_dir, model_name, counter_outputs, device)
     shutil.rmtree(output_dir)
 
