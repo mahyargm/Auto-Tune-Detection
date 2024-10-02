@@ -7,7 +7,7 @@ layout: default
 # Abstract
 <p style="text-align: justify;">In the domain of music production and audio processing, the deployment of automatic singing pitch correction, also known as Auto-Tune, has significantly transformed the landscape of vocal performance. While auto-tuning technology has offered musicians the ability to tune their vocal pitches and achieve a desired level of precision, its use has also sparked debates regarding its impact on authenticity and artistic integrity. As a result, detecting and analyzing Auto-Tuned vocals in music recordings have become essential for music scholars, producers, and listeners. However, to the best of our knowledge, no prior effort has been made in this direction. This study introduces a data-driven approach leveraging triplet networks for the detection of Auto-Tuned songs, backed by the creation of a dataset composed of original and Auto-Tuned audio clips. The experimental results demonstrate the superiority of the proposed method in both accuracy and robustness compared to Rawnet2, an end-to-end model proposed for anti-spoofing and widely used for other audio forensic tasks.</p>
 
-**Note:** The related manuscript is currently under review. [Preprint paper link](http://arxiv.org/abs/2403.05380).
+**Note:** The related manuscript is acceptet at WIFS 2024. [Preprint paper link](http://arxiv.org/abs/2403.05380).
 
 ***
 
@@ -117,3 +117,62 @@ layout: default
         </tr>
     </table>
 </div>
+
+***
+
+# Runtime evaluation
+
+The average runtime performance of the proposed method on the test dataset (10-second segmetns), evaluated across various backbone architectures, is summarized in the table below. The experiments were conducted on a system with the following specifications:
+- **CPU:** AMD EPYC 7742 64-Core Processor
+- **RAM:** 32 GB
+- **GPU:** NVIDIA A100
+- **Operating System:** Ubuntu 22.04.4 LTS
+
+<div style="margin: 0 auto; width: 100%;">
+    <table align="center" style="width: 100%;">
+        <tr>
+            <th style="text-align:center; font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #ccc; width: 25%;">Backbones</th>
+            <th style="text-align:center; font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #ccc; width: 25%;">Feature Extractor (ms)</th>
+            <th style="text-align:center; font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #ccc; width: 25%;">Classifier (ms)</th>
+            <th style="text-align:center; font-size: 15px; background-color: #D3D3D3; color: Black; border: 1px solid #ccc; width: 25%;">Total (ms)</th>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">ResNeXt</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">10.562</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">0.285</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">10.847</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">EfficientNet</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">21.350</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">0.285</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">21.635</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">ResNet18</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">5.741</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">0.285</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;"><strong>6.026</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">ResNet50</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">10.457</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">0.285</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">10.742</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">B01</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">-</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">-</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">13.379</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">B02</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">-</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">-</td>
+            <td style="text-align:center; border: 1px solid #ccc; padding: 10px;">10.601</td>
+        </tr>
+    </table>
+</div>
+
+
