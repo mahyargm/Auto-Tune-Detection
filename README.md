@@ -114,12 +114,15 @@ For any question regarding this repository, please contact:
 If you use this code in your research please use the following citation:
 
 ```bibtex
-@misc{gohari2024spectrogrambased,
-      title={Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings}, 
-      author={Mahyar Gohari and Paolo Bestagini and Sergio Benini and Nicola Adami},
-      year={2024},
-      eprint={2403.05380},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD}
-}
+@INPROCEEDINGS{10810675,
+  author={Gohari, Mahyar and Bestagini, Paolo and Benini, Sergio and Adami, Nicola},
+  booktitle={2024 IEEE International Workshop on Information Forensics and Security (WIFS)}, 
+  title={Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Deepfakes;Accuracy;Forensics;Conferences;Music;Production;Transformers;Robustness;Recording;Security;Auto-Tune detection;Music Processing;Pitch correction;Spectrogram processing;Triplet networks},
+  doi={10.1109/WIFS61860.2024.10810675}}
+
 ```
