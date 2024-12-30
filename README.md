@@ -1,6 +1,6 @@
 # Auto-Tune Detector (ATD)
 
-This tool utilizes deep learning and spectrogram-based techniques to identify Auto-Tuned vocals in music recordings. [Preprint paper link](http://arxiv.org/abs/2403.05380).
+This tool utilizes deep learning and spectrogram-based techniques to identify Auto-Tuned vocals in music recordings. [The paper link](https://ieeexplore.ieee.org/document/10810675).
 
 
 ## Installation:
